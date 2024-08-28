@@ -1,0 +1,119 @@
+
+#wrapper {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cwrapper {
+    width: 200px;
+    height: 400px;
+    perspective: 800px;
+    border-radius: 15px;
+    transition: all .3s linear;
+}
+.cwrapper > *,
+.card > * {
+    border-radius: inherit;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    transition: all .3s linear;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+}
+.cz, .cz .back {
+    background-image:
+    radial-gradient(
+    circle closest-side,#06191d, rgb(242, 227, 19)300%,#F2CD13, #F2AB27, #f27b35);
+}
+.yk, .yk .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, black, #264de4 300%);
+}
+.md, .md .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, black, #e4dacc 300%);
+}
+.sf, .sf .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, black, #8d0803 300%);
+}
+.db, .db .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, #1d1818, #73020C 300%, #F2E205, #F2CB07, #D98E04);
+}
+.mk, .mk .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, #1d1818, #73020C 300%, #F2E205, #F2CB07, #D98E04);
+}
+.st, .st .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, #1d1818, #F24B6A 300%, #498BA6, #F2DD72, #D98E04);
+}
+h2 {
+    margin: auto 0;
+}
+.front,.back {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-size: cover;
+}
+.pic-holder {
+    width: 100%;
+    aspect-ratio: 1;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease;
+}
+.cz .pic-holder {
+    background-image: url("img/cavaleiros-do-zodiaco-logo.png");
+}
+.yk .pic-holder {
+    background-image: url("img/yu-yu-hakusho-logo.png");
+}
+.md .pic-holder {
+    background-size: 85%;
+    background-image: url("img/Medabots-logo.png");
+}
+.sf .pic-holder {
+    background-image: url("img/Sreet-fighter-logo.png");
+}
+.db .pic-holder {
+    background-image: url("img/Dragon-Ball-Logo.png");
+}
+.mk .pic-holder {
+    background-image: url("img/Mk-logo.png");
+}
+.st .pic-holder {
+    background-image: url("img/Logos/shurato-logo.png");
+}
+.back {
+    background-image: linear-gradient(to bottom, #deeb2d, firebrick);
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
